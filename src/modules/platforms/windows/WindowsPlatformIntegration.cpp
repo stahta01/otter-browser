@@ -545,7 +545,7 @@ bool WindowsPlatformIntegration::registerToSystem()
 	m_propertiesRegistration.setValue(QLatin1String("FriendlyTypeName"), QLatin1String("Otter Browser Document"));
 	m_propertiesRegistration.setValue(QLatin1String("DefaultIcon/."), m_applicationFilePath + QLatin1String(",1"));
 	m_propertiesRegistration.setValue(QLatin1String("EditFlags"), 2);
-	m_propertiesRegistration.setValue(QLatin1String("shell/open/ddeexec/."), {});
+	//m_propertiesRegistration.setValue(QLatin1String("shell/open/ddeexec/."), {});
 	m_propertiesRegistration.setValue(QLatin1String("shell/open/command/."), QLatin1String("\"") + m_applicationFilePath + QLatin1String("\" \"%1\""));
 	m_propertiesRegistration.sync();
 
